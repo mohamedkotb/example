@@ -1,0 +1,10 @@
+
+<div class="main">
+    <p class="sign" align="center">Sign in</p>
+    <form class="form1" [formGroup]="loginForm" >
+      <input formControlName="username" mdbInput class="un " type="text" align="center" placeholder="Username"/>
+      <input formControlName="password" mdbInput class="pass" type="password" align="center" placeholder="Password"/>
+      <a class="submit" align="center" (click)="onSubmit()">Sign in</a>
+    </form>
+    <p *ngIf="isWrong" class="wrong">UserName Or Password is Wrong</p>
+</div>
